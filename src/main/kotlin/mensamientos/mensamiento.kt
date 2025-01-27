@@ -24,6 +24,8 @@ fun List<String>.getRandom(): String {
 }
 
 val mensamientos = listOf(
+    "Patatillas del amoooor❤️",
+    "voy coller uns chasqui😋",
     "Pero aún te amo y vivo enamorado",
     "Yo mensaba...",
     "Error de diseño!",
