@@ -24,6 +24,7 @@ fun List<String>.getRandom(): String {
 }
 
 val mensamientos = listOf(
+    "Eu non sei nada, son un niño pequeño😏",
     "Patatillas del amoooor❤️",
     "voy coller uns chasqui😋",
     "Pero aún te amo y vivo enamorado",
@@ -40,6 +41,7 @@ val mensamientos = listOf(
     "jejejeje",
     "Estoy caliente",
     "Me la estás poniendo dura(la vida)",
+    "Se está poniendo dura😩",
     "Eu te amo, de verdade!",
     "Relax se come mas rico comidita en casa",
     "sorry esataba tomando cafe",
@@ -122,6 +124,7 @@ val mensamientos = listOf(
     "sabes que puedes tocar todo lo que quieras",
     "Fuera demoniooo",
     "Hay que meter la banana en el congelador para que se ponga dura",
+
     "No sabpia, nunca la he probado con Nutella, con pan si \uD83D\uDE0A \uD83D\uDE05",
     "```css\nclassName={\n\tisActive_fitler_item_all ? ...\n}\n```"
 )
