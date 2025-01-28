@@ -24,10 +24,15 @@ fun List<String>.getRandom(): String {
 }
 
 val mensamientos = listOf(
+    "ahorita voy",
+    "Ya va",
+    "Mil perdones🙏🏾",
+    "Bien con alergia, pero ahí vamos jejejej",
     "Eu non sei nada, son un niño pequeño😏",
     "Patatillas del amoooor❤️",
     "voy coller uns chasqui😋",
-    "Pero aún te amo y vivo enamorado",
+    "Pero aún te amooo y vivo enamoradooo 🎶",
+    "En hora boa",
     "Yo mensaba...",
     "Error de diseño!",
     "Hay que facer las cosaas como tal...",
