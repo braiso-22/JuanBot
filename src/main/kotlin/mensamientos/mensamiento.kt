@@ -24,6 +24,7 @@ fun List<String>.getRandom(): String {
 }
 
 val mensamientos = listOf(
+    "Perdona que no te saludé en la mañana😅",
     "ahorita voy",
     "Ya va",
     "Mil perdones🙏🏾",
