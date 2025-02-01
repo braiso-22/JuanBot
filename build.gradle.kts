@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.braiso_22"
-version = "1.0-SNAPSHOT"
+version = ""
 
 application{
     mainClass.set("Mainkt")

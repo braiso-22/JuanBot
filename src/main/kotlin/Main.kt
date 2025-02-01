@@ -7,7 +7,6 @@ import dev.kord.core.Kord
 import dev.kord.gateway.Intent
 import dev.kord.gateway.PrivilegedIntent
 import dev.kord.gateway.builder.PresenceBuilder
-import kotlinx.datetime.Instant
 
 suspend fun main() {
     val kord = Kord("")

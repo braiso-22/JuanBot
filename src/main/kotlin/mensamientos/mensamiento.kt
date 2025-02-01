@@ -130,7 +130,6 @@ val mensamientos = listOf(
     "sabes que puedes tocar todo lo que quieras",
     "Fuera demoniooo",
     "Hay que meter la banana en el congelador para que se ponga dura",
-
     "No sabpia, nunca la he probado con Nutella, con pan si \uD83D\uDE0A \uD83D\uDE05",
     "```css\nclassName={\n\tisActive_fitler_item_all ? ...\n}\n```"
 )
