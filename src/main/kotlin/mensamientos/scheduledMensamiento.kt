@@ -8,19 +8,18 @@ import dev.kord.core.on
 import kotlinx.coroutines.delay
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
+import kotlin.time.Duration
 import kotlin.time.Duration.Companion.minutes
 
 
-const val waitTime = 29
-fun Kord.randomMensamiento() {
+fun Kord.scheduledMensamiento(mensamientos: List<String>, waitTime: Duration = 29.minutes) {
     this.on<ReadyEvent> {
         val channel = kord.getChannelOf<MessageChannel>(Snowflake(1308349431824912416))
-       //  delay(5.minutes)
 
         var lastSelectedDate = LocalDateTime.now()
         while (true) {
-            if (lastSelectedDate.until(LocalDateTime.now(), ChronoUnit.MINUTES) < waitTime) {
-                delay(waitTime.minutes)
+            if (lastSelectedDate.until(LocalDateTime.now(), ChronoUnit.MINUTES) < waitTime.inWholeMinutes) {
+                delay(waitTime)
                 continue
             }
             channel?.createMessage(mensamientos.getRandom())

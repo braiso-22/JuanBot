@@ -1,27 +1,5 @@
-package com.braiso_22.mensamientos
+package com.braiso_22.mensamientos.strings
 
-import dev.kord.core.Kord
-import dev.kord.core.event.message.MessageCreateEvent
-import dev.kord.core.on
-import kotlin.random.Random
-
-fun Kord.mensamiento(){
-    this.on<MessageCreateEvent> { // runs every time a message is created that our bot can read
-        // ignore other bots, even ourselves. We only serve humans here!
-        if (message.author?.isBot != false) return@on
-
-        // check if our command is being invoked
-        if (!message.content.contains("!mensamiento")) return@on
-
-        // all clear, give them the pong!
-        message.channel.createMessage(mensamientos.getRandom())
-    }
-}
-
-fun List<String>.getRandom(): String {
-    val index = Random.nextInt(this.size)
-    return this[index]
-}
 
 val mensamientos = listOf(
     "Perdona que no te saludé en la mañana😅",
@@ -34,6 +12,7 @@ val mensamientos = listOf(
     "voy coller uns chasqui😋",
     "Pero aún te amooo y vivo enamoradooo 🎶",
     "En hora boa",
+    "Non mensaba que la yente me iba a felicitar",
     "Yo mensaba...",
     "Error de diseño!",
     "Hay que facer las cosaas como tal...",
@@ -132,4 +111,4 @@ val mensamientos = listOf(
     "Hay que meter la banana en el congelador para que se ponga dura",
     "No sabpia, nunca la he probado con Nutella, con pan si \uD83D\uDE0A \uD83D\uDE05",
     "```css\nclassName={\n\tisActive_fitler_item_all ? ...\n}\n```"
-)
+).map { "$it \n\n-*juan*" }

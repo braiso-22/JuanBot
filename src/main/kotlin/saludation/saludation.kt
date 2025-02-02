@@ -9,12 +9,13 @@ import dev.kord.core.on
 import kotlinx.coroutines.delay
 import java.time.LocalTime
 import kotlin.random.Random
+import kotlin.time.Duration
 import kotlin.time.Duration.Companion.minutes
 
 val juanChannel = Snowflake(1308349431824912416)
 
 
-fun Kord.saludation() {
+fun Kord.saludation(waitTime: Duration = 29.minutes) {
     this.on<ReadyEvent> {
         kord.getChannelOf<MessageChannel>(juanChannel)?.let { channel ->
 
@@ -46,7 +47,7 @@ fun Kord.saludation() {
                     lastSentPeriod = currentPeriod
                 }
 
-                delay(29.minutes)
+                delay(waitTime)
             }
         }
     }
